@@ -1,0 +1,274 @@
+<html>
+
+<head> </head>
+
+
+<style>
+    
+    #startscreen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        display: block;
+        
+        
+    }
+    
+    #Welcome {
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        font-family: serif;
+        text-align: center;
+        font-size: 4em;
+        font-style: oblique;
+        user-select: none;
+        cursor: pointer;
+        
+    }
+    
+    #intro {
+        position: absolute;
+        width: 40vw;
+        height: 10vh;
+        top: 15vh;
+        left: 30vw;
+        text-align: center;
+        font-size: 1.5em;
+        user-select: none;
+    }
+    
+    #price {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        background-color: white;
+        top: 50vh;
+        left: 10vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 4em;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    #skill {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        background-color: white;
+        top: 50vh;
+        left: 40vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 4em;
+        cursor: pointer;
+        user-select: none;
+    }    
+
+    #specs {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        background-color: white;
+        top: 50vh;
+        left: 70vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 4em;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    #supportHome {
+        position: absolute;
+        width: 15vmin;
+        height: 5vmin;
+        background-color: lightblue;
+        left: 170vmin;
+        text-align: center;
+        font-size: 2em;
+        font-family: sans-serif;
+        cursor: pointer;
+        user-select: none;
+        
+    }
+    
+    #priceScreen {
+        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        display: none; /* block */
+    }
+    
+    #pricebar {
+        
+        position: absolute;
+        background-color: white;
+        height: 5vmin;
+        width: 80vmin;
+        left: 57vmin;
+        top: 30vmin;
+        font-size: 2em;
+    }
+    
+    #supportScreen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        display: none;
+        
+           
+    }
+    
+    #nameBar {
+        
+    position: absolute;
+    background-color: white;
+    height: 5vmin;
+    width: 80vmin;
+    left: 57vmin;
+    top: 30vmin;
+    font-size: 2em;
+    }
+
+    #emailBar {
+        
+    position: absolute;
+    background-color: white;
+    height: 5vmin;
+    width: 80vmin;
+    left: 57vmin;
+    top: 40vmin;
+    font-size: 2em;
+    }
+    
+    #messageBar {
+        
+    position: absolute;
+    background-color: white;
+    height: 20vmin;
+    width: 80vmin;
+    left: 57vmin;
+    top: 50vmin;
+    font-size: 2em;
+    }
+
+
+
+</style>
+
+
+<body>
+
+<div id= "startscreen"> 
+    
+    <div id= "Welcome"> Welcome to Camera To Go! </div>
+    <div id= "intro"> This is Camera To Go. The easiest way to find the right equipment for you to rent. No complicated details or tricks, just making your day easier. <br> <br> <br> How would you like to start your search? </div>
+    <div id= "price"> Price </div>
+    <div id= "skill"> Skill Level </div>
+    <div id= "specs"> Specs </div>
+    <div id= "supportHome"> Support </div>
+    
+    </div>
+    
+<div id= "priceScreen">
+    <div id= "Welcome">Camera To Go! </div>
+    <div id= "intro"> Search based on PRICE. <br> <br> Here you can find the right camera for you, without breaking the bank. <br> Input your amount below, along with your +/- (wiggleroom)</div>
+    <div id= "pricebar"> $ </div>
+    
+    </div>
+    
+<div id= "supportScreen"> 
+    <div id= "Welcome"> Camera To Go! </div>
+    <div id= "intro"> Get in touch with top tier professionals who will help you every step of the way. <br> Give us a call at (888)333-1111 </div>
+    <div id= "nameBar"> Name </div>
+    <div id= "emailBar"> Email </div>
+    <div id= "messageBar"> Message </div>
+    
+    
+    
+    </div>
+
+
+
+
+<script>
+    var myStartScreen;
+    myStartScreen = document.querySelector("#startscreen");
+    
+    var myPricebutton;
+    myPricebutton = document.querySelector("#price"); 
+    myPricebutton.addEventListener("click", hideStartscreenShowPrice, false);
+    
+    var mySkilllevel;
+    mySkilllevel = document.querySelector("#skill");
+    
+    var mySpecs;
+    mySpecs = document.querySelector("#specs");
+    
+    var mySupportbutton;
+    mySupportbutton = document.querySelector("#supportHome");
+    
+    var myPricescreen;
+    var myPricescreendisplay;
+    myPricescreen = document.querySelector("#priceScreen");
+    myPricescreendisplay = myPricescreen.style.display;
+    
+    var myHomebutton;
+    myHomebutton = document.querySelector("#Welcome");
+    myHomebutton.addEventListener("click", goHome, false);
+    
+    var mySupportScreen;
+    mySupportScreen = document.querySelector("supportScreen");
+    mySupportbutton.addEventListener("click", hideStartscreenShowSupport, false);
+    
+
+
+    
+
+    
+    
+    function hideStartscreenShowSupport() {    
+    myStartScreen.style.displace = 'none';
+    mySupportScreen.style.display = 'block';
+    } 
+    
+
+
+    function hideStartscreenShowPrice() {
+    myPricescreen.style.display = ("block");
+    myStartScreen.style.display = ("none");
+
+    
+    }
+    
+    
+    function goHome() {
+    myPricescreen.style.display = ("none");
+    myStartScreen.style.display = ("block");
+    
+    
+    }
+
+        
+        
+        
+        
+</script>
+
+            
+
+</body>
+
+
+
+
+
+
+</html>
