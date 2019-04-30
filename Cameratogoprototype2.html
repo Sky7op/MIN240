@@ -1,0 +1,556 @@
+<html>
+
+<head> </head>
+
+
+<style>
+    
+    #startscreen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        display: block;
+        
+        
+    }
+    
+    #Welcome {
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        font-family: serif;
+        text-align: center;
+        font-size: 4em;
+        font-style: oblique;
+        user-select: none;
+        
+    }
+    
+    #Welcome1 {
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        font-family: serif;
+        text-align: center;
+        font-size: 4em;
+        font-style: oblique;
+        user-select: none;
+        cursor: pointer;
+        
+    }
+    
+    #Welcome2 {
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        font-family: serif;
+        text-align: center;
+        font-size: 4em;
+        font-style: oblique;
+        user-select: none;
+        cursor: pointer;
+        
+    }
+    
+    #Welcome3 {
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        font-family: serif;
+        text-align: center;
+        font-size: 4em;
+        font-style: oblique;
+        user-select: none;
+        cursor: pointer;
+        
+    }
+    
+    #Welcome4 {
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        font-family: serif;
+        text-align: center;
+        font-size: 4em;
+        font-style: oblique;
+        user-select: none;
+        cursor: pointer;
+        
+    }
+    
+    #Welcome5 {
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        font-family: serif;
+        text-align: center;
+        font-size: 4em;
+        font-style: oblique;
+        user-select: none;
+        cursor: pointer;
+        
+    }
+    
+    #intro {
+        position: absolute;
+        width: 40vw;
+        height: 10vh;
+        top: 15vh;
+        left: 30vw;
+        text-align: center;
+        font-size: 1.5em;
+        user-select: none;
+    }
+    
+    #price {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        background-color: white;
+        top: 50vh;
+        left: 10vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 4em;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    #skill {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        background-color: white;
+        top: 50vh;
+        left: 40vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 4em;
+        cursor: pointer;
+        user-select: none;
+    }    
+
+    #specs {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        background-color: white;
+        top: 50vh;
+        left: 70vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 4em;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    #supportHome {
+        position: absolute;
+        width: 15vmin;
+        height: 5vmin;
+        background-color: lightblue;
+        left: 90%;
+        text-align: center;
+        font-size: 2em;
+        font-family: sans-serif;
+        cursor: pointer;
+        user-select: none;
+        
+    }
+    
+    #priceScreen {
+        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        display: none; /* block */
+    }
+    
+    #pricebar {
+        
+        position: absolute;
+        background-color: white;
+        height: 5vmin;
+        width: 80vmin;
+        left: 57vmin;
+        top: 30vmin;
+        font-size: 2em;
+    }
+    
+    #supportScreen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        display: none;
+        
+           
+    }
+    
+    #nameBar {
+        
+    position: absolute;
+    background-color: white;
+    height: 5vmin;
+    width: 80vmin;
+    left: 57vmin;
+    top: 30vmin;
+    font-size: 2em;
+    }
+
+    #emailBar {
+        
+    position: absolute;
+    background-color: white;
+    height: 5vmin;
+    width: 80vmin;
+    left: 57vmin;
+    top: 40vmin;
+    font-size: 2em;
+    }
+    
+    #messageBar {
+        
+    position: absolute;
+    background-color: white;
+    height: 20vmin;
+    width: 80vmin;
+    left: 57vmin;
+    top: 50vmin;
+    font-size: 2em;
+    }
+    
+    
+    #skillLevelscreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    display: none;
+    }
+    
+    #searchBar {
+        
+    position: absolute;
+    height: 8vmin;
+    width: 20vmin;
+    background-color: white;
+    top: 85vmin;
+    left: 50%;
+    text-align: center;
+    font-size: 2em;
+    font-family: monospace;
+    user-select: none;
+    cursor: pointer;
+    }
+    
+    #beginner {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        background-color: white;
+        top: 50vh;
+        left: 10vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 4em;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    #amateur {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        background-color: white;
+        top: 50vh;
+        left: 40vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 4em;
+        cursor: pointer;
+        user-select: none;
+    }    
+
+    #pro {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        background-color: white;
+        top: 50vh;
+        left: 70vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 4em;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    #specsScreen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        display: none;
+    }
+    
+    #submit {
+        position: absolute;
+        background-color: white;
+        left: 91vmin;
+        top: 40vh;
+        height: 6vmin;
+        width: 15vmin;
+        text-align: center;
+        font-family: monospace;
+        font-size: 2em;
+        user-select: none;
+        cursor: pointer;
+        
+        
+    }
+    
+    #suggestionScreen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        display: none;
+        
+        
+    }
+    
+    #cameraSuggestion {
+        position: absolute;
+        left: 90vw;
+        
+    }
+
+
+</style>
+
+
+<body>
+
+<div id= "startscreen"> 
+    
+    <div id= "Welcome"> Welcome to Camera To Go! </div>
+    <div id= "intro"> This is Camera To Go. The easiest way to find the right equipment for you to rent. No complicated details or tricks, just making your day easier. <br> <br> <br> How would you like to start your search? </div>
+    <div id= "price"> Price </div>
+    <div id= "skill"> Skill Level </div>
+    <div id= "specs"> Specs </div>
+    <div id= "supportHome"> Support </div>
+    
+    </div>
+    
+<div id= "priceScreen">
+    <div id= "Welcome1">Camera To Go! </div>
+    <div id= "intro"> Search based on PRICE. <br> <br> Here you can find the right camera for you, without breaking the bank. <br> Input your amount below, along with your +/- (wiggleroom)</div>
+    <div id= "pricebar"> $ </div>
+    <div id= "searchbar"> Search </div>
+    
+    </div>
+    
+<div id= "supportScreen"> 
+    <div id= "Welcome2"> Camera To Go! </div>
+    <div id= "intro"> Get in touch with top tier professionals who will help you every step of the way. <br> Give us a call at (888)333-1111 </div>
+    <div id= "nameBar"> Name </div>
+    <div id= "emailBar"> Email </div>
+    <div id= "messageBar"> Message </div>
+    
+    
+    
+    </div>
+    
+<div id= "skillLevelscreen"> 
+    
+    <div id= "Welcome3"> Camera To Go! </div>
+    <div id= "intro"> Search based on your skill level. <br> Pick the level that best applies to you. </div>
+    <div id= "Beginner"> Beginner </div>
+    <div id= "Amateur"> Amateur </div>
+    <div id= "Pro"> Pro </div>
+    <div id= "searchBar"> Search </div>
+
+    </div>
+    
+<div id= "specsScreen"> 
+    
+    <div id= "Welcome4"> Camera To Go! </div>
+    <div id= "intro"> Search based on specs. Enter keywords for your search. <br> The more you use, the more narrow your search will be. <br> <br> <br> <input type=text> </div>
+    <div id= "submit"> Submit </div>
+    </div>
+    
+<div id= "suggestionScreen">
+    <div id= "Welcome5"> Camera To Go! </div>
+    <div id= "intro"> We have found 1 suggestion based on your search: <br> <br> The Blackmagic Pocket Cinema Camera 4k.</div>
+    
+    <div id= "cameraPicture"> <img src="https://sky7op.github.io/MIN240/Blackmagic-Pocket-Cinema-Camera-4K-Left-Angle.png"> </div>
+    
+    
+    </div>
+
+
+
+<script>
+    var myStartScreen;
+    myStartScreen = document.querySelector("#startscreen");
+    
+    var myPricebutton;
+    myPricebutton = document.querySelector("#price"); 
+    myPricebutton.addEventListener("click", hideStartscreenShowPrice, false);
+    
+    var mySkillButton;
+    mySkillButton = document.querySelector("#skill");
+    mySkillButton.addEventListener("click", hideStartscreenShowLevel, false);
+    
+    
+    var specsButton;
+    var specsScreen;
+    specsButton = document.querySelector("#specs");
+    specsScreen = document.querySelector("#specsScreen");
+    specsButton.addEventListener("click", hideStartscreenShowSpecs, false);
+    
+    
+    var mySupportbutton;
+    mySupportbutton = document.querySelector("#supportHome");
+    
+    var myPricescreen;
+    var myPricescreendisplay;
+    myPricescreen = document.querySelector("#priceScreen");
+    myPricescreendisplay = myPricescreen.style.display;
+    
+    var myHomebutton1;
+    myHomebutton = document.querySelector("#Welcome1");
+    myHomebutton.addEventListener("click", goHome1, false);
+    
+    var myHomebutton2;
+    myHomebutton = document.querySelector("#Welcome2");
+    myHomebutton.addEventListener("click", goHome2, false);
+    
+    var myHomebutton3;
+    myHomebutton = document.querySelector("#Welcome3");
+    myHomebutton.addEventListener("click", goHome3, false);
+    
+    var myHomebutton4;
+    myHomebutton = document.querySelector("#Welcome4");
+    myHomebutton.addEventListener("click", goHome4, false);
+     
+    var myHomebutton5;
+    myHomebutton = document.querySelector("#Welcome5");
+    myHomebutton.addEventListener("click", goHome5, false);
+    
+    var mySupportScreen;
+    mySupportScreen = document.querySelector("#supportScreen");
+    mySupportbutton.addEventListener("click", hideStartscreenShowSupport, false);
+    
+    var mySkilllevel;
+    mySkilllevel = document.querySelector("#skillLevelscreen");
+    
+    var submitButton;
+    var suggestionScreen;
+    suggestionScreen = document.querySelector("#suggestionScreen");
+    submitButton = document.querySelector("#submit");
+    submitButton.addEventListener("click", hideSpecsShowSuggestion, false);
+    
+
+    
+
+    
+    
+    var beginnerbutton;
+    beginnerbutton = document.querySelector("#Beginner");
+    var amateurbutton;
+    amateurbutton = document.querySelector("#Amateur");
+    var probutton;
+    probutton = document.querySelector("#Pro");
+    
+    beginnerbutton.addEventListener("click", highlightLevel, false);
+    
+    function hideStartscreenShowLevel() { 
+    mySkilllevel.style.display = ("block");
+    myStartScreen.style.display = ("none");
+        }
+    
+    function highlightLevel() {
+    beginnerbutton.style.backgroundColor = ("blue");   
+    }
+
+    
+    
+    function hideStartscreenShowSupport() {    
+    myStartScreen.style.display = ("none");
+    mySupportScreen.style.display = ("block");
+    } 
+    
+
+
+    function hideStartscreenShowPrice() {
+    myPricescreen.style.display = ("block");
+    myStartScreen.style.display = ("none");
+
+       
+    }
+    
+    function hideStartscreenShowSpecs() {
+    specsScreen.style.display = ("block");
+    myStartScreen.style.display = ("none");
+        
+    }
+    
+    function hideSpecsShowSuggestion() {
+    suggestionScreen.style.display = ("block");
+    specsScreen.style.display = ("none");
+        
+    }
+    
+    
+    function goHome1() {
+    myPricescreen.style.display = ("none");
+    myStartScreen.style.display = ("block");
+    }
+    
+    function goHome2() {
+    mySupportScreen.style.display = ("none");
+    myStartScreen.style.display = ("block");
+    }
+    
+    function goHome3() {
+    mySkilllevel.style.display = ("none");
+    myStartScreen.style.display = ("block");
+    }
+    
+    function goHome4() {
+    specsScreen.style.display = ("none");
+    myStartScreen.style.display = ("block");
+    }
+    
+    function goHome5() {
+    suggestionScreen.style.display = ("none");
+    myStartScreen.style.display = ("block");
+    }
+    
+
+        
+        
+        
+        
+</script>
+
+            
+
+</body>
+
+
+
+
+
+
+</html>
